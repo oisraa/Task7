@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "94f1a6dd-f8d6-4715-8998-80b88dc1a043",
+		"name": "Task7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32002311"
+	},
+	"item": [
+		{
+			"name": "Registration users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4%7CJgW9xqlbjoMHKbQ3Qi9tTPiF13tfEUAYbxSOCpBa15f72ab8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer superSecretKey12345",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"name\": \"israa\",\r\n  \"email\": \"israa@example.com\",\r\n  \"age\": 24,\r\n  \"password\": \"12345\",\r\n  \"role\": \"professor\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get a user by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user by ID",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/api/users/6713cf7021570701c0417257",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"users",
+						"6713cf7021570701c0417257"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create courses",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTU2ZThiMWZhMjlhOGQ5ZWQyODJjYSIsImlhdCI6MTcyOTUwNTQ0NywiZXhwIjoxNzMwMzY5NDQ3fQ.lttVDTfo0dJVbeXWE859uWAkDlfZN6Kp46L35XofShw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/courses/courses/6716a14a25b2dd63b6d1a137",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"courses",
+						"courses",
+						"6716a14a25b2dd63b6d1a137"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a specific course by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTU2ZThiMWZhMjlhOGQ5ZWQyODJjYSIsImlhdCI6MTcyOTUwNTQ0NywiZXhwIjoxNzMwMzY5NDQ3fQ.lttVDTfo0dJVbeXWE859uWAkDlfZN6Kp46L35XofShw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/api/courses/courses/6716a14a25b2dd63b6d1a137",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"courses",
+						"courses",
+						"6716a14a25b2dd63b6d1a137"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a course",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "videoRoutes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTU2ZThiMWZhMjlhOGQ5ZWQyODJjYSIsImlhdCI6MTcyOTUwNTQ0NywiZXhwIjoxNzMwMzY5NDQ3fQ.lttVDTfo0dJVbeXWE859uWAkDlfZN6Kp46L35XofShw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Introduction to JavaScript\",\r\n  \"description\": \"This video covers the basics of JavaScript, including variables, functions, and control flow.\",\r\n  \"videoUrl\": \"https://example.com/videos/js-introduction.mp4\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/videos/6716a14a25b2dd63b6d1a137/videos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"videos",
+						"6716a14a25b2dd63b6d1a137",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all videos for a course",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add a comment to a video",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single video by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update a video (Only the professor who uploaded it)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTU2ZThiMWZhMjlhOGQ5ZWQyODJjYSIsImlhdCI6MTcyOTUwNTQ0NywiZXhwIjoxNzMwMzY5NDQ3fQ.lttVDTfo0dJVbeXWE859uWAkDlfZN6Kp46L35XofShw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/api/videos/videos/6717799fb6f9032b89f2bb1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"videos",
+						"videos",
+						"6717799fb6f9032b89f2bb1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a video (Only the professor who uploaded it)",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
